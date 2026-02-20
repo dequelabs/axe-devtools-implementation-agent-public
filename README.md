@@ -75,15 +75,38 @@ Place `mcp.json` in the `.cursor` directory in the root of your project or root 
 }
 ```
 
-## Start Onboarding the Implementation Agent
+### Using in IDE AI Chat
 
-1. Confirm you are in the project you wish to implement Axe DevTools in.
-   - ⚠️ It is recommended to run the Implementation Agent on a non-production branch. The `adt-start` command will check the branch before continuing with the implementation.
-2. Make sure your IDE's AI chat is in Agent mode.
-3. Run the `#adt-start` tool command to get started.
-4. The Implementation Agent will guide the user on next steps.
+Before starting, confirm you are in the project you wish to implement Axe DevTools in.
 
-**Note:** There is a required order the MCP's tools need to be run in. Starting with the `#adt-start` tool command will ensure the implementation goes in the correct order.
+⚠️ It is recommended to run the Implementation Agent on a non-production branch. The `adt-start` command will check the branch before continuing with the implementation.
+
+🤖 Make sure your IDE's AI chat is in Agent mode.
+
+Once configured, use these commands in your IDE's AI chat:
+
+#### **Complete Workflow (Recommended):**
+```
+#adt-start           → Step 1: Initial setup & Git branch management
+#adt-discovery       → Step 2: Scan frameworks & create config files  
+#adt-solution        → Step 3: Get personalized recommendations
+#adt-watcher         → Step 4a: Implement axe-watcher (results → Developer Hub)
+#adt-api             → Step 4b: Implement axe DevTools API (local scan results)
+#adt-reporter        → Step 4c: Add HTML/CSV/XML report generation (after API only)
+#adt-setup-precommit → Step 5: Complete pre-commit hook integration (web frameworks)
+```
+
+#### **Individual Commands:**
+- **`#adt-hello`** - Test the MCP server connection
+- **`#adt-start`** - **Step 1**: Initial setup & Git branch management
+- **`#adt-discovery`** - **Step 2**: Scan current project for testing frameworks, verify package access (npm/Maven/pip), and create config files
+- **`#adt-solution`** - **Step 3**: Get personalized accessibility integration recommendations
+- **`#adt-watcher`** - **Step 4a**: Implement axe-watcher with framework-specific instructions (Cypress, Playwright, Java Selenium). Results go directly to axe Developer Hub — no local reporter needed
+- **`#adt-api`** - **Step 4b**: Implement axe DevTools API with framework-specific instructions (Playwright, Cypress, Java Selenium, Python Robot Framework). Produces local scan results
+- **`#adt-reporter`** - **Step 4c**: Add HTML/CSV/XML report generation (only after `#adt-api` implementation — not used with `#adt-watcher`)
+- **`#adt-cli`** - Standalone page/workflow accessibility testing without framework changes
+- **`#adt-setup-precommit`** - **Step 5**: Complete pre-commit integration workflow for web frameworks
+- **`#adt-set-python-venv`** - Set or change the Python virtual environment path, validate it, and test pip access to Deque packages
 
 ## Video Demo
 
