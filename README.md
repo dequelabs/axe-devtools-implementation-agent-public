@@ -81,3 +81,7 @@ Place `mcp.json` in the `.cursor` directory in the root of your project or root 
 4. The Implementation Agent will guide the user on next steps.
 
 **Note:** There is a required order the MCP's tools need to be run in. Starting with the `#adt-start` tool command will ensure the implementation goes in the correct order.
+
+## Video Demo
+
+▶️ [Watch the Demo on YouTube](https://www.youtube.com/watch?v=PkagCwknrfA)
