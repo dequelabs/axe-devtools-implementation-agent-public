@@ -2,7 +2,7 @@
 
 **Note:** This is the public facing repository with release binaries only.
 
-The implementation agent is an MCP server that can install on a developers workstation that will help with the implementation of Deque's Axe DevTools for Web products into their projects using the IDE's AI chat agent.
+The implementation agent is an MCP server that can be installed on a developers workstation and will help with the implementation of Deque's Axe DevTools for Web products using the IDE's AI chat agent.
 
 As of version 0.2.0 the agent supports the implementation of:
 
@@ -23,12 +23,12 @@ The MCP server itself is a single self contained executable that does not have a
 ## Installation Instructions
 
 1. Download the release for you operating system from the Releases section.
-2. Once downloaded, place the executable someplace that would be accessible to your IDE (doesn't need to be in path).
+2. Once downloaded, place the executable someplace that would be accessible to your IDE.
 3. Add MCP configuration to the IDE.
 
 ### macOS and Linux Instructions
 
-The downloaded executables will need an extra step on macOS and Linux to make them executable
+The downloaded executables will need an extra step on macOS and Linux to make them executable.
 
 **macOS**
 ```shell
