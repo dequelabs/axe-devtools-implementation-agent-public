@@ -1,5 +1,7 @@
 # Axe DevTools Implementation Agent
 
+> **⚠️ Disclaimer:** This software is a pre-release and is not officially supported by Deque Systems, Inc. It is provided "as is" without warranty of any kind. Deque shall not be held responsible for any issues, damages, or losses caused by the use of this tool. **Do not run this tool against production branches of your projects.** Always use a dedicated development or feature branch when working with this agent.
+
 **Note:** This is the public facing repository with release binaries only.
 
 The implementation agent is an MCP server that can be installed on a developers workstation and will help with the implementation of Deque's Axe DevTools for Web products using the IDE's AI chat agent.
