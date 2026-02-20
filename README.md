@@ -78,6 +78,7 @@ Place `mcp.json` in the `.cursor` directory in the root of your project or root 
 ## Start Onboarding the Implementation Agent
 
 1. Confirm you are in the project you wish to implement Axe DevTools in.
+   - ⚠️ It is recommended to run the Implementation Agent on a non-production branch. The `adt-start` command will check the branch before continuing with the implementation.
 2. Make sure your IDE's AI chat is in Agent mode.
 3. Run the `#adt-start` tool command to get started.
 4. The Implementation Agent will guide the user on next steps.
