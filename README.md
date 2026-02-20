@@ -45,6 +45,8 @@ chmod +x axe-imp-agent-linux
 
 ### VS Code
 
+Place `mcp.json` in the `.vscode` directory in the root of your project or root of your home directory.
+
 ```json
 {
     "servers": {
@@ -57,6 +59,8 @@ chmod +x axe-imp-agent-linux
 ```
 
 ### Cursor
+
+Place `mcp.json` in the `.cursor` directory in the root of your project or root of your home directory.
 
 ```json
 {
